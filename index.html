@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prose | Custom Hair Care Made for You</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Prose</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Help</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-link">Log in</a>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Custom hair care made for you</h1>
+                <p class="hero-subtitle">Take our consultation to get a personalized hair care routine based on your unique hair goals, lifestyle, and environment.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">85+</span>
+                        <span class="stat-text">factors analyzed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-text">custom formulas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">91%</span>
+                        <span class="stat-text">see results</span>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="startConsultation()">Take the consultation</button>
+                <p class="hero-note">Takes 2 minutes • Free shipping on orders $30+</p>
+            </div>
+            <div class="hero-image">
+                <div class="product-showcase">
+                    <div class="product-bottle product-1">
+                        <div class="bottle-label">Custom Shampoo</div>
+                    </div>
+                    <div class="product-bottle product-2">
+                        <div class="bottle-label">Custom Conditioner</div>
+                    </div>
+                    <div class="product-bottle product-3">
+                        <div class="bottle-label">Hair Mask</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Take the consultation</h3>
+                    <p>Answer questions about your hair type, goals, lifestyle, and environment. Our AI analyzes 85+ factors to create your unique profile.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Get your custom formula</h3>
+                    <p>Our in-house chemists create your personalized shampoo, conditioner, and treatments using clean, effective ingredients.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Review & refine</h3>
+                    <p>Share feedback on your products and we'll adjust your formula to continuously improve your results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Personalized for every hair need</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-bottle-card shampoo"></div>
+                    </div>
+                    <h3>Custom Shampoo</h3>
+                    <p>Gentle, sulfate-free formula tailored to your scalp and hair type</p>
+                    <span class="price">From $25</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-bottle-card conditioner"></div>
+                    </div>
+                    <h3>Custom Conditioner</h3>
+                    <p>Moisturizing formula that doesn't weigh your hair down</p>
+                    <span class="price">From $25</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-bottle-card mask"></div>
+                    </div>
+                    <h3>Hair Mask</h3>
+                    <p>Intensive treatment for your specific hair concerns</p>
+                    <span class="price">From $38</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-bottle-card oil"></div>
+                    </div>
+                    <h3>Hair Oil</h3>
+                    <p>Nourishing treatment and styling oil in one</p>
+                    <span class="price">From $48</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What our customers say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"This is the first time I've found products that actually work for my hair type. The customization is incredible!"</p>
+                    <div class="customer">
+                        <span class="name">Sarah M.</span>
+                        <span class="verified">Verified Customer</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"My hair has never been healthier. I love that they adjust the formula based on my feedback."</p>
+                    <div class="customer">
+                        <span class="name">Jessica L.</span>
+                        <span class="verified">Verified Customer</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Finally, a brand that understands that one size doesn't fit all. My curls have never looked better!"</p>
+                    <div class="customer">
+                        <span class="name">Maria R.</span>
+                        <span class="verified">Verified Customer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-stats">
+                <div class="stat-large">
+                    <span class="number">345,000+</span>
+                    <span class="text">5-star reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="sustainability">
+        <div class="container">
+            <div class="sustainability-content">
+                <div class="sustainability-text">
+                    <h2>Clean, sustainable beauty</h2>
+                    <p>We're the first climate-neutral custom beauty brand. Our products are made with 99% naturally derived ingredients, and all packaging is 100% recyclable.</p>
+                    <ul class="sustainability-features">
+                        <li><i class="fas fa-leaf"></i> Climate & carbon neutral</li>
+                        <li><i class="fas fa-recycle"></i> 100% recyclable packaging</li>
+                        <li><i class="fas fa-heart"></i> Cruelty-free & PETA approved</li>
+                        <li><i class="fas fa-seedling"></i> 99% naturally derived ingredients</li>
+                    </ul>
+                    <a href="#" class="learn-more">Learn more about our sustainability</a>
+                </div>
+                <div class="sustainability-image">
+                    <div class="eco-graphic">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to transform your hair?</h2>
+                <p>Join thousands of customers who've found their perfect hair routine</p>
+                <button class="cta-button" onclick="startConsultation()">Start your consultation</button>
+                <p class="cta-note">100% satisfaction guarantee • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Custom Hair Care</a></li>
+                        <li><a href="#">Shampoo</a></li>
+                        <li><a href="#">Conditioner</a></li>
+                        <li><a href="#">Hair Mask</a></li>
+                        <li><a href="#">Hair Oil</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Prose</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe for updates</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <h3>Prose</h3>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Prose. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Start Your Custom Hair Journey</h2>
+            <p>We'll ask you a few questions to create your personalized formula.</p>
+            <form class="consultation-form">
+                <div class="form-group">
+                    <label>What's your hair type?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="hair-type" value="straight"> Straight</label>
+                        <label><input type="radio" name="hair-type" value="wavy"> Wavy</label>
+                        <label><input type="radio" name="hair-type" value="curly"> Curly</label>
+                        <label><input type="radio" name="hair-type" value="coily"> Coily</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>What's your main hair concern?</label>
+                    <select name="hair-concern">
+                        <option value="">Select concern</option>
+                        <option value="dryness">Dryness</option>
+                        <option value="frizz">Frizz</option>
+                        <option value="damage">Damage</option>
+                        <option value="oily">Oily scalp</option>
+                        <option value="thinning">Thinning</option>
+                        <option value="color-protection">Color protection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>How often do you wash your hair?</label>
+                    <select name="wash-frequency">
+                        <option value="">Select frequency</option>
+                        <option value="daily">Daily</option>
+                        <option value="every-other-day">Every other day</option>
+                        <option value="2-3-times-week">2-3 times per week</option>
+                        <option value="weekly">Once a week</option>
+                        <option value="less-than-weekly">Less than once a week</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-submit">Continue Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
